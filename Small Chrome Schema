@@ -1,0 +1,62 @@
+{
+    "title": "com.google.Chrome",
+    "description": "",
+    "properties": {
+        "ExtensionInstallWhitelist": {
+            "title": "ExtensionInstallWhitelist",
+            "description": "",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "ExtensionInstallBlacklist": {
+            "title": "ExtensionInstallBlacklist",
+            "description": "",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "title": "Entries"
+                    }
+                }
+            ]
+        },
+        "AllowOutdatedPlugins": {
+            "title": "AllowOutdatedPlugins",
+            "description": "",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "SafeBrowsingEnabled": {
+            "title": "SafeBrowsingEnabled",
+            "description": "",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        }
+    }
+}
