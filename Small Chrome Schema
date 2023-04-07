@@ -2,8 +2,8 @@
     "title": "com.google.Chrome",
     "description": "",
     "properties": {
-        "ExtensionInstallWhitelist": {
-            "title": "ExtensionInstallWhitelist",
+        "ExtensionInstallAllowlist": {
+            "title": "ExtensionInstallAllowlist",
             "description": "",
             "property_order": 5,
             "anyOf": [
@@ -18,8 +18,8 @@
                 }
             ]
         },
-        "ExtensionInstallBlacklist": {
-            "title": "ExtensionInstallBlacklist",
+        "ExtensionInstallBlocklist": {
+            "title": "ExtensionInstallBlocklist",
             "description": "",
             "property_order": 10,
             "anyOf": [
@@ -50,6 +50,18 @@
             "title": "SafeBrowsingEnabled",
             "description": "",
             "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "string"
+                }
+            ]
+        },
+        "ExtensionInstallForcelist": {
+            "title": "ExtensionInstallForcelist",
+            "description": "",
+            "property_order": 25,
             "anyOf": [
                 {"type": "null", "title": "Not Configured"},
                 {
